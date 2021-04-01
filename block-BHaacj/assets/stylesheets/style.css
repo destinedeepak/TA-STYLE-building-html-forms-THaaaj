@@ -1,0 +1,376 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom-styles  */
+
+/* general  */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+	color: white;
+	background: #E6E6E6;
+}
+.container{
+	max-width: 75vw;
+	margin:0 auto;
+	width: 100%;
+}
+:root{
+	--primary-color:#69C6BA;
+	--secondary-color:#C66995;
+}
+.inline-block{
+	display: inline-block;
+}
+/* flex  */
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.flex-end{
+	justify-content:flex-end;
+}
+.flex-start{
+	align-items: flex-start;
+}
+.wrap{
+	flex-wrap:wrap;
+}
+.flex-16{
+	flex: 0 1 16.7%;
+}
+.flex-20{
+	flex: 0 1 20%;
+}
+.flex-25{
+	flex: 0 1 25%;
+}
+.flex-30{
+	flex: 0 1 30%;
+}
+.flex-45{
+	flex: 0 1 45%;
+}
+.flex-48{
+	flex: 0 1 48%;
+}
+.flex-50{
+	flex: 0 1 50%;
+}
+
+/* anchor  */
+a{
+	text-decoration: none;
+}
+
+/* text  */
+.h1-heading{
+	font-size: 32px;
+	color: white;
+}
+.h2-heading{
+	font-size: 25px;
+}
+.capitalize{
+	text-transform: capitalize;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.text-center{
+	text-align: center;
+}
+.font-0{
+	font-size: 0;
+}
+/* image  */
+.flexible-image{
+	width: 100%;
+	height: auto;
+}
+/* btn  */
+.btn{
+	font-size: 12px;
+	color: white;
+	background: var(--primary-color);
+	text-align: center;
+}
+.btn-submit{
+	width: 100%;
+	margin-top: 40px;
+	padding: 8px 0;
+}
+.btn-primary{
+    padding: 8px 20px;
+}
+.btn-secondary{
+	background: white;
+	color: var(--primary-color);
+}
+.btn-tertiary{
+	background: white;
+	color: var(--secondary-color);
+}
+/* margin and padding  */
+.top-margin-20{
+	margin-top: 20px;
+}
+.margin-0{
+     margin: 0 0;
+}
+
+/* header  */
+.header{
+	background: white;
+}
+.header-content{
+	padding: 15px 70px;
+}
+.brand-name{
+	font-size: 32px;
+	font-weight: 700;
+	color: black;
+	margin-left: 12px;
+	vertical-align: top;
+}
+.navbar a{
+	font-size: 12px;
+	margin-left: 40px;
+	font-weight: 700;
+	color: black;
+}
+.navbar .active{
+	color: var(--primary-color);
+}
+
+/* main  */
+/* section-hero  */
+.hero-content{
+	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+	url("../media/banner.jpg") no-repeat center center;
+	background-size: cover;
+	padding: 50px 0 50px 0;
+}
+.hero-header .text{
+	font-size: 20px;
+}
+.arrow-down{
+	color: white;
+	background: var(--primary-color);
+	border-radius: 50%;
+	padding: 7px 12px;
+	margin-top: 10px;
+}
+/* form  */
+.hero form{
+	background: #F5F6F6;
+	color: black;
+	padding: 20px;
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 70px;
+}
+label{
+	font-size: 12px;
+	font-weight: 700;
+	color: black;
+	text-transform: capitalize;
+}
+.form-control{
+	width: 100%;
+	border: none;
+	background: #F5F6F6;
+	font-size: 11px;
+	color: grey;
+	padding: 10px;
+}
+/* intro  */
+.intro-content{
+	background: #ebebeb;
+}
+.intro .article{
+	color: black;
+	width: 60%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+.h2-heading strong{
+	font-weight: 700;
+}
+.intro-content .text{
+	font-size: 12px;
+	color: rgb(70, 70, 70);
+	margin: 20px 0;
+}
+/* blogs  */
+.blogs-content{
+	background: white;
+	font-size: 0;
+}
+.relative{
+	position: relative;
+}
+.blog-arrow{
+	padding: 6px 12px;
+	background:linear-gradient(rgba(0,0,0,0.5),transparent);
+	margin-left: 4px;
+	color: #DEDCDA;
+}
+.floating-article-type-1{
+ position: absolute;
+ width: 55%;
+ right: 35px;
+}
+.floating-article p{
+	font-size: 12px;
+	margin: 15px 0;
+	color: rgb(218, 218, 218);
+}
+.floating-article-text{
+    background: var(--primary-color);
+	padding: 30px;
+}
+
+.floating-article-type-2{
+	position: absolute;
+	width: 55%;
+	left: 35px;
+   }
+.blog-type-2-bg{
+	background: var(--secondary-color);
+}
+/* maps  */
+.maps-content{
+	background: var(--primary-color);
+}
+figure{
+	padding: 20px 22px;
+	height: 160px;
+
+}
+figcaption{
+padding-bottom: 40px;
+text-align: center;
+font-size: 12px;
+}
+/* deals  */
+.deals-content{
+	background-color:white;
+	padding: 50px 0	;
+}
+.deals .article{
+	width:70% ;
+	margin: 0 auto;
+	border: 1px solid #D9D9D9;
+	margin-bottom: 20px;
+}
+.deals-text .h3-heading{
+	font-size: 16px;
+	color: black;
+	font-weight: 600;
+}
+.deals-text .h4-heading{
+	font-size: 12px;
+	font-weight: 600;
+	color: var(--secondary-color);
+	margin: 0px 5px 8px 0;
+}
+.deals-text p{
+    font-size: 12px;
+	color: rgb(165, 165, 165);
+}
+.price-tag .h3-heading{
+	font-size: 20px;
+    font-weight: 600;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+.price-tag{
+	background-color: var(--primary-color);
+}
+.price-tag a{
+     font-size: 11px;
+	 color: white;
+}
+
+
+
+
+
+
+/* contact-us  */
+.contact-us form{
+	background-color: white;
+	width: 350px;
+	height: 310px;
+	padding: 15px;
+	font-size: 0;
+	position: absolute;
+	top: 70px;
+    right: 70px;
+}
+.contact-us .form-control{
+	margin-bottom: 10px;
+}
+/* footer  */
+.footer-content{
+	background-color: var(--primary-color);
+	padding: 25px 0;
+}
+.footer p{
+	font-size: 12px;
+}

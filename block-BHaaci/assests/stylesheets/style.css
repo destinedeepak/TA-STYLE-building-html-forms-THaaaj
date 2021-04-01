@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom-styles  */
+
+/* general  */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+	color: white;
+	
+}
+.container{
+	max-width: 75vw;
+	margin:0 auto;
+	width: 100%;
+}
+/* flex  */
+.flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.column{
+	flex-direction: column;
+}
+.flex-48{
+	flex: 0 1 48%;
+}
+
+/* btn  */
+.btn-primary{
+	width: 100%;
+	height: 60px;
+	background: #5D54A3;
+    border: 0;
+	border-radius: 8px;
+	box-shadow: 0 8px 0px rgba(0,0,0,0.1 );
+}
+.btn-secondary{
+	background-color: #37CC8A;
+	box-shadow: none;
+	height:50px;
+	box-shadow: 0 4px 0 rgb(79, 165, 126);
+	text-transform: uppercase;
+	font-size: 16px;
+	color: white;
+	font-weight: 600;
+}
+/* main  */
+main{
+	background: url("../media/bg-intro-desktop.png") no-repeat center center,
+	linear-gradient(rgba(255,121,120),rgb(255,121,120));
+	 background-size: cover;
+	 height: 100vh;
+}
+
+h1{
+	font-size: 42px;
+	font-weight: 700;
+}
+article p{
+	font-size: 14px;
+	margin-top: 30px;
+}
+.btn-primary a{
+	text-decoration: none;
+    font-size: 16px;
+	color: white;
+	font-weight: 600;
+}
+
+.btn-primary span{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+form{
+	margin-top: 40px;
+	background: white;
+	padding: 40px;
+	border-radius: 8px;
+}
+.form-control{
+	width: 100%;
+	height: 50px;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	border-radius: 8px;
+	border: 1px solid rgb(218, 218, 218);
+	outline: 0;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	color: #7E807E;
+}
+.form-control:focus{
+	border-color: #5D54A3;
+}
+.text{
+	color: #CECCD9;
+	font-size: 10px;
+	margin-top: 10px;
+	text-align:center;
+}
+.text a{
+	text-decoration: none;
+	color: #f18185;
+	font-weight:600;
+	
+}
+
