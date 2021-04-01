@@ -61,10 +61,7 @@ body{
     line-height: 1.5;
     font-weight: 500;
 	color: white;
-	padding: 100px 0;
-	background:linear-gradient(rgba(255,121,120,0.7),rgba(255,121,120,0.7)),
-	 url("../media/bg-intro-desktop.png") no-repeat center center;
-	 background-size: cover;
+	
 }
 .container{
 	width: 75vw;
@@ -89,11 +86,8 @@ body{
 	height: 60px;
 	background: #5D54A3;
     border: 0;
-    font-size: 16px;
-	color: white;
-	font-weight: 600;
 	border-radius: 8px;
-	box-shadow: 0 8px 0px rgba(0,0,0,0.1);
+	box-shadow: 0 8px 0px rgba(0,0,0,0.1 );
 }
 .btn-secondary{
 	background-color: #37CC8A;
@@ -101,6 +95,16 @@ body{
 	height:50px;
 	box-shadow: 0 4px 0 rgb(79, 165, 126);
 	text-transform: uppercase;
+	font-size: 16px;
+	color: white;
+	font-weight: 600;
+}
+/* main  */
+main{
+	background: url("../media/bg-intro-desktop.png") no-repeat center center,
+	linear-gradient(rgba(255,121,120),rgb(255,121,120));
+	 background-size: cover;
+	 height: 100vh;
 }
 
 h1{
@@ -110,6 +114,12 @@ h1{
 article p{
 	font-size: 14px;
 	margin-top: 30px;
+}
+.btn-primary a{
+	text-decoration: none;
+    font-size: 16px;
+	color: white;
+	font-weight: 600;
 }
 
 .btn-primary span{
@@ -137,7 +147,7 @@ form{
 	color: #7E807E;
 }
 .form-control:focus{
-	border: 2px solid #5D54A3;
+	border-color: #5D54A3;
 }
 .text{
 	color: #CECCD9;
@@ -145,7 +155,8 @@ form{
 	margin-top: 10px;
 	text-align:center;
 }
-.text small{
+.text a{
+	text-decoration: none;
 	color: #f18185;
 	font-weight:600;
 	
