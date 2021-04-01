@@ -266,9 +266,10 @@ label{
 }
 .blog-arrow{
 	padding: 6px 12px;
-	background:linear-gradient(rgba(0,0,0,0.5),transparent);
+	background:rgba(104,119,118,0.7);
 	margin-left: 4px;
 	color: #DEDCDA;
+	font-size: 12px;
 }
 .floating-article-type-1{
  position: absolute;
